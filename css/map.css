@@ -1,0 +1,30 @@
+#map {
+	width: 1000px;
+	height: 600px;
+}
+
+.SvgOverlay {
+	position: relative;
+	width: 1000px;
+	height: 600px;
+}
+
+.SvgOverlay svg {
+	/*
+		8000px * 8000pxの領域で中心座標を0px,0pxに設定
+	*/
+	position: absolute;
+	top: -4000px;
+	left: -4000px;
+	width: 8000px;
+	height: 8000px;        
+}
+
+.SvgOverlay path {
+	/*
+	色をcategoly10て作るためコメントアウト
+	stroke: red;
+	*/
+	stroke-width: 2px;
+	fill-opacity: 0;
+}
